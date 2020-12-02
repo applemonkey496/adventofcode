@@ -44,4 +44,3 @@ for (const line of input) {
 // Output
 console.log(correctMethodOne);
 console.log(correctMethodTwo);
-
