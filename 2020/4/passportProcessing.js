@@ -8,7 +8,7 @@ const entries = fs.readFileSync('input.txt').toString().split('\n\n');
 const requiredFields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'];
 
 // For the second challenge: validate the values of a 
-// passport fieldset. Instead of and-ing every statement, 
+// passport fieldset. Instead of and-ing every statement,
 // just return out if something is false. This has the 
 // benefit of being more neat, as everything can be 
 // organized into sections. We don't have to error check 
