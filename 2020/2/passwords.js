@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 // Separate input file by line
-const input = fs.readFileSync('./input.txt').toString().split('\n');
+const input = fs.readFileSync('./input.txt').toString().split(/\n|\r\n/);
 
 // The counter for valid passwords.
 // methodOne is for the first part

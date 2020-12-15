@@ -4,7 +4,7 @@ import fs from 'fs';
 // The entries are separated by two lines, so separate
 // by that. toString() isn't necessary, but it's safer,
 // because fs.readFileSync returns a Buffer, not a String.
-const entries = fs.readFileSync('input.txt').toString().split('\n\n');
+const entries = fs.readFileSync('input.txt').toString().split(/(\n|\r\n){2}/);
 const requiredFields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'];
 
 // For the second challenge: validate the values of a 
@@ -95,7 +95,7 @@ let validMethodTwo = 0; // part 2
 for (let entry of entries) {
 
     // Split by newline or whitespace. Regex does it again.
-    let fieldsStr = entry.split(/ |\n/); 
+    let fieldsStr = entry.split(/ |\n|\r\n/); 
 
     let fields = {};
 
