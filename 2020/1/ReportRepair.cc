@@ -34,7 +34,7 @@ void findTwo() {
 
 void findThree() {
     // Again, this doesn't have to be efficient
-    // because it runs really fast anyways.
+    // because it runs really quickly anyways.
     for (int i = 0; i < inputSize; i++) {
         for (int j = 0; j < inputSize; j++) {
             for (int k = 0; k < inputSize; k++) {
@@ -59,7 +59,4 @@ int main() {
     findTwo();
     findThree();
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> bef024b1ad2652d305f713b4b3212ce6d828a765
