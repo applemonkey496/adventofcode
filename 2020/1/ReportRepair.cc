@@ -1,6 +1,4 @@
 
-// Input: https://adventofcode.com/2020/day/1/input
-
 #include <iostream>
 #include "input.hh"
 
